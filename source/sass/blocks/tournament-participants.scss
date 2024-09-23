@@ -1,0 +1,291 @@
+.tournament-participants {
+  margin: 0 0 141px 0;
+
+  @media screen and (min-width: 376px) and (max-width: 671px) {
+    margin: 0 0 102px 0;
+  }
+
+  @media screen and (max-width: 376px) {
+    margin: 0 0 102px 0;
+  }
+
+  &__slider {
+    display: grid;
+    justify-content: space-between;
+
+    gap: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+
+
+    @media screen and (max-width: 1173px) {
+      display: flex;
+      flex-direction: column;
+
+      gap: 40px;
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      gap: 38px;
+    }
+
+    @media screen and (max-width: 376px) {
+      gap: 38px;
+    }
+  }
+
+  &__title {
+    min-width: 806px;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 1.2;
+    font-family: "Merriweather", serif;
+    color: #313131;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 769px) {
+      font-size: 44px;
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      min-width: 335px;
+
+      font-size: 36px;
+    }
+
+    @media screen and (max-width: 376px) {
+      min-width: 335px;
+
+      font-size: 36px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-self: baseline;
+    margin: 8px 3px 0 0;
+
+    gap: 16px;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      order: 3;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 376px) {
+      order: 3;
+      margin: 0 auto;
+    }
+  }
+
+  &__button-prev {
+    width: 44px;
+    height: 46px;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      width: 36px;
+      height: 36px;
+    }
+
+    @media screen and (max-width: 376px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__button-next {
+    width: 44px;
+    height: 46px;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      width: 36px;
+      height: 36px;
+    }
+
+    @media screen and (max-width: 376px) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__counter {
+    position: relative;
+
+    display: grid;
+    align-self: center;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: "Golos Text", serif;
+    color: #313131;
+
+    gap: 11px;
+    grid-template-columns: repeat(2, 1fr);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 8px;
+      height: 15px;
+
+      background-image: url("../img/stack.svg#separator");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__current {
+    display: inline-block;
+  }
+
+  &__total {
+    display: inline-block;
+
+    opacity: 60%;
+  }
+
+  &__list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+
+    gap: 20px;
+    grid-column-end: -1;
+    grid-column-start: -3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+    @media screen and (max-width: 701px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 37px;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      padding: 0 24px 0 25px;
+    }
+
+    @media screen and (max-width: 376px) {
+      padding: 0 24px 0 25px;
+    }
+  }
+
+  &__image {
+    margin: 0 0 24px 0;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      margin: 0 0 28px 0;
+    }
+
+    @media screen and (max-width: 376px) {
+      margin: 0 0 28px 0;
+    }
+
+    &-desktop {
+      @media screen and (min-width: 376px) and (max-width: 671px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 376px) {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      display: none;
+
+      @media screen and (min-width: 376px) and (max-width: 671px) {
+        display: block;
+      }
+
+      @media screen and (max-width: 376px) {
+        display: block;
+      }
+    }
+  }
+
+  &__name {
+    margin: 0 0 6px 0;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: "Golos Text", serif;
+    color: #313131;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      margin: 0 0 8px 0;
+    }
+
+    @media screen and (max-width: 376px) {
+      margin: 0 0 8px 0;
+    }
+  }
+
+  &__rank {
+    margin: 0 0 20px 0;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: "Golos Text", serif;
+    color: #313131;
+
+    opacity: 60%;
+  }
+
+  &__button {
+    margin: 0;
+    padding: 6px 12px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: "Golos Text", serif;
+    color: #3057a2;
+
+    background: none;
+    border: 1px solid #3057a2;
+    border-radius: 62px;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffffff;
+
+      background-color: #3057a2;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      color: #ffffff;
+
+      background-color: #3057a2;
+      outline: none;
+    }
+
+    &:disabled {
+      background-color: #d6d6d6;
+
+      pointer-events: none;
+    }
+  }
+}

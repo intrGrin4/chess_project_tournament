@@ -1,0 +1,83 @@
+
+.running-line {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 18px 12px;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  background-color: #f54932;
+
+  @media screen and (min-width: 376px) and (max-width: 671px) {
+    padding: 10px 12px;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 10px 12px;
+  }
+
+  &__wrapper {
+    display: inline-flex;
+
+    white-space: nowrap;
+
+    animation: scrollText 13s linear infinite;
+
+    will-change: transform;
+  }
+
+  &__text {
+    position: relative;
+
+    display: inline-block;
+    margin: 0;
+    padding: 0 2rem;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.1;
+    font-family: "Meriweather", serif;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 6px;
+      height: 6px;
+
+      background-color: #ffffff;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      padding: 0 1rem;
+
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 376px) {
+      padding: 0 1rem;
+
+      font-size: 16px;
+    }
+  }
+}
+
+
+@keyframes scrollText {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
