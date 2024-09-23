@@ -1,0 +1,120 @@
+.tournament-international {
+  margin: 0 0 46px 0;
+  padding: 79px 0 0 0;
+
+  @media screen and (min-width: 376px) and (max-width: 671px) {
+    margin: 0 0 43px 0;
+    padding: 48px 0 0 0;
+  }
+
+  @media screen and (max-width: 376px) {
+    margin: 0 0 43px 0;
+    padding: 48px 0 0 0;
+  }
+
+  &__description {
+    max-width: 764px;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.35;
+    font-family: "Merriweather", serif;
+    color: #313131;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      display: block;
+
+      font-size: 28px;
+
+      &:nth-child(1) {
+        margin: 0 0 262px 0;
+      }
+    }
+
+    @media screen and (max-width: 376px) {
+      display: block;
+
+      font-size: 28px;
+
+      &:nth-child(1) {
+        margin: 0 0 262px 0;
+      }
+    }
+
+    &--bold {
+      color: #f54932;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 64px;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      flex-direction: column;
+      justify-content: none;
+    }
+
+    @media screen and (max-width: 376px) {
+      flex-direction: column;
+      justify-content: none;
+    }
+  }
+
+  &__content {
+    max-width: 764px;
+    margin: 29px 0 0 0;
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      position: relative;
+
+      margin: 0;
+    }
+
+    @media screen and (max-width: 376px) {
+      position: relative;
+
+      margin: 0;
+    }
+  }
+
+  &__image {
+    &-desktop {
+      @media screen and (min-width: 376px) and (max-width: 671px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 376px) {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      display: none;
+
+      @media screen and (min-width: 376px) and (max-width: 671px) {
+        display: block;
+      }
+
+      @media screen and (max-width: 376px) {
+        display: block;
+      }
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 671px) {
+      position: absolute;
+
+      transform: translate(0, 83%);
+    }
+
+    @media screen and (max-width: 376px) {
+      position: absolute;
+
+      transform: translate(0, 83%);
+    }
+  }
+}

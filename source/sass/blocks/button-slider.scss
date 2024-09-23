@@ -1,0 +1,48 @@
+.button-slider {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #313131;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 21px;
+    height: 17px;
+
+    background-image: url("../img/stack.svg#btn-slider");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--rotate {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    background-color: #fbce51;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    background-color: #fbce51;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: #d6d6d6;
+
+    pointer-events: none;
+  }
+}
